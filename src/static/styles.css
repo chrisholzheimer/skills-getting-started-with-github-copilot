@@ -89,16 +89,35 @@ section h3 {
   font-weight: bold;
 }
 
-.activity-card-participants ul {
-  list-style-type: disc;
-  margin-left: 20px;
+
+.activity-card-participants ul.participants-list {
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+  padding-left: 0;
 }
 
-.activity-card-participants li {
+.participant-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 4px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #c62828;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #a31515;
 }
 
 .form-group {
